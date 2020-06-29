@@ -23,6 +23,8 @@
 		D038F84024A7D75100AC85D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D038F83F24A7D75100AC85D3 /* Preview Assets.xcassets */; };
 		D038F84924A7DA1800AC85D3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D038F84824A7DA1800AC85D3 /* Alamofire */; };
 		D0A9925E24A98C9C00BBF830 /* CarsValidateImageReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9925D24A98C9C00BBF830 /* CarsValidateImageReducer.swift */; };
+		D0A9926224AA46B700BBF830 /* CarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9926124AA46B700BBF830 /* CarDetailView.swift */; };
+		D0A9926424AA488B00BBF830 /* CarDetailLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9926324AA488B00BBF830 /* CarDetailLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		D038F83F24A7D75100AC85D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D038F84124A7D75100AC85D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0A9925D24A98C9C00BBF830 /* CarsValidateImageReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsValidateImageReducer.swift; sourceTree = "<group>"; };
+		D0A9926124AA46B700BBF830 /* CarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailView.swift; sourceTree = "<group>"; };
+		D0A9926324AA488B00BBF830 /* CarDetailLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 		D0212CA524A926380040DC16 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D0A9926024AA467D00BBF830 /* CarDetail */,
 				D0212CA624A9264F0040DC16 /* CarsList */,
 			);
 			path = UI;
@@ -184,6 +189,15 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		D0A9926024AA467D00BBF830 /* CarDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D0A9926124AA46B700BBF830 /* CarDetailView.swift */,
+				D0A9926324AA488B00BBF830 /* CarDetailLabel.swift */,
+			);
+			path = CarDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -261,7 +275,9 @@
 			files = (
 				D038F83B24A7D75000AC85D3 /* ContentView.swift in Sources */,
 				D0A9925E24A98C9C00BBF830 /* CarsValidateImageReducer.swift in Sources */,
+				D0A9926224AA46B700BBF830 /* CarDetailView.swift in Sources */,
 				D0212CAA24A927080040DC16 /* CarRowView.swift in Sources */,
+				D0A9926424AA488B00BBF830 /* CarDetailLabel.swift in Sources */,
 				D0212CAD24A929240040DC16 /* ImageLoader.swift in Sources */,
 				D0212CA424A923CE0040DC16 /* CarsWorker.swift in Sources */,
 				D0212C9B24A920090040DC16 /* CarMapperReducer.swift in Sources */,

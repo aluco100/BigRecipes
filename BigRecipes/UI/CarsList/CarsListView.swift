@@ -17,7 +17,11 @@ struct CarsListView: View {
             ScrollView {
                 LazyVStack {
                     ForEach(appState.cars) { car in
-                        CarRowView(car: car, imageLoader: ImageLoader(url: URL(string: car.img_url)!))
+                        NavigationLink(
+                            destination: CarDetailView(car: car, imageLoader: ImageLoader(url: URL(string: car.img_url)!)),
+                            label: {
+                                CarRowView(car: car, imageLoader: ImageLoader(url: URL(string: car.img_url)!))
+                            }).buttonStyle(PlainButtonStyle())
                     }
                 }
             }.onAppear {
