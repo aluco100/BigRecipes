@@ -13,14 +13,17 @@ struct CarsListView: View {
     var interactor: CarsInteractor
     
     var body: some View {
-        ScrollView {
-            LazyVStack {
-                ForEach(appState.cars) { car in
-                    CarRowView(car: car, imageLoader: ImageLoader(url: URL(string: car.img_url)!))
+        NavigationView {
+            ScrollView {
+                LazyVStack {
+                    ForEach(appState.cars) { car in
+                        CarRowView(car: car, imageLoader: ImageLoader(url: URL(string: car.img_url)!))
+                    }
                 }
+            }.onAppear {
+                interactor.loadCars()
             }
-        }.onAppear {
-            interactor.loadCars()
+            .navigationTitle(Text("Autos"))
         }
     }
 }
