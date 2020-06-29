@@ -17,7 +17,8 @@ struct CarRowView: View {
             Image(uiImage: imageLoader.image ?? UIImage())
                 .resizable()
                 .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-                .frame(height: 100)
+                .frame(height: 170)
+                .clipped()
                 .onAppear {
                     self.imageLoader.load()
                 }
